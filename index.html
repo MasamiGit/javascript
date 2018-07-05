@@ -5,6 +5,50 @@
 	<title>javascript</title>
 </head>
 <body>
-	
+	<script>
+		var a = {"鈴木":"大阪府大阪市・・・","田中":"東京都新宿区・・・","福田":"大阪府枚方市・・・","横山":"大阪府寝屋川市・・・"};
+		document.write(simei["鈴木"] + "<br>");
+		for(key in simei){
+			document.write(key + ":" + a[key] + "<br>");
+		}
+	</script>
+	<script>
+		var a = ["A","B","C","D","E"];
+		a[0] = "田中";
+		document.write(a[0] + "<br>");
+
+		for(i in a){
+			a[0] = "田中→tanaka";
+			document.write(a[i] + "<br>");
+		}
+
+	</script>
+	<script>
+		function namae(a){
+			document.write(a + "<br>");
+		}
+		namae("Hello");
+
+		function namaes(a){
+			document.write("Hallo!" + "<br>");
+		}
+		namaes("a");
+	</script>
+	<script>
+		for(a = 0; a < 10; a++){
+			if(a === 2)continue;
+			document.write(a + "<br>");
+		}
+	</script>
+	<script>
+		for(var p in document){
+			document.write(p + "<br>");
+		}
+	</script>
+	<script>
+		for(var p in document){
+			document.write(p + "<br>");
+		}
+	</script>
 </body>
 </html>

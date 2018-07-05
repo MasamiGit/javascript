@@ -2,9 +2,120 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-calable=no">
 	<title>javascript</title>
 </head>
 <body>
+	<script>
+		var a = "suzuki itirou";
+		var a = new String("suzuki itirou");
+		var count = a.length;
+
+		var count = "suzuki".length;
+		document.write(count);
+
+	</script>
+	<!-- <script>
+		document.write(Math.round(2.55888));
+	</script> -->
+<!-- 	<script>
+		var person = new Object();
+		person.name = "田中";
+		person.email = "tanaka@ne.jp";
+		person.greet = function()
+		{
+			alert("Hello");
+		}
+		person.greet();
+		document.write(person.name,person.email);
+		// var greet = function(){
+		// 	alert("Hello");};
+		// 	greet();
+		// person.greet = function(){alet("Hello");};
+
+	</script> -->
+	<!-- <script>
+		function person(name,email,address)
+		{
+			this.name = name;
+			this.email = email;
+			this.address = address;
+		}
+		var tanaka = new person("田中", "tanaka@ne.jp", "東京都新宿区・・・");
+		document.write(tanaka.address);
+	</script> -->
+	<!-- <script>
+		var person = new Object();
+
+		person.name = "田中";
+		person.address = "東京都新宿区・・・	";
+		person.email = "tanaka@main.ne.jp";
+
+		document.write(person.address + "<br>");
+		document.write(person.name + "<br>");
+		document.write(person.email);
+	</script> -->
+	<!-- <script>
+		function push()
+		{
+			alert("You pushed me");
+		}
+	</script>
+	<input type="button" value="Puch me" onmouseover="" ="push()">
+	<input type="button" value="Puch me" onclick="push()"> -->
+<!-- 	<input type="button" value="Puch me" onclick="alert('You pushed me')"> -->
+	<!-- <script>
+		var a = 3;
+		var b = 2;
+		if((a > 2)&&(b > 3))
+		{
+			document.write("条件を満たしています");
+		}else if((a > 2)||(b > 3))
+		{
+			document.write("条件を満たしていません");
+		}
+	</script> -->
+	<!-- <script>
+		function hoge(x,y,z){
+			return x + y + z;
+		}
+		var a = hoge(8,200,100);
+		document.write(a);
+
+	</script> -->
+	<!-- <script>
+		var name = prompt("名前を入力して下さい。");
+		alert(name + "こんにちは！");
+		var result = confirm("削除しますか？");
+		if(result){
+			document.write("削除しました。");
+
+		}else
+		{
+			document.write("キャンセル");
+
+		}
+	</script> -->
+	<div id="target"></div>
+	<input type="button" value="izumirikaを見たい！" id="bt">
+	<br>
+	<script>
+		var target = document.getElementById('target');
+		var bt = document.getElementById('bt');
+		bt.addEventListener('click', function(e){
+			var imglist = [
+			"images/image01.png",
+			"images/image02.png",
+			"images/image03.png",
+			"images/image04.png",
+			"images/image05.png",
+			];
+			var selectnum = Math.floor(Math.random() * imglist.length);
+			var element = '<img src="' + imglist[selectnum] + '" alt=""/>';
+			target.innerHTML = element;
+		},false);
+
+	</script>
 	<script>
 		var a = {"鈴木":"大阪府大阪市・・・","田中":"東京都新宿区・・・","福田":"大阪府枚方市・・・","横山":"大阪府寝屋川市・・・"};
 		document.write(simei["鈴木"] + "<br>");

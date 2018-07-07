@@ -2,12 +2,108 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-calable=no">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-calable=no"> -->
 	<title>javascript</title>
 </head>
 <body>
+
+	<p class="hoge">JavaScript</p>
+	<p class="hogehoge">PHP</p>
+	<p class="hoge">Java</p>
+	<script type="text/JavaScript" src="test.js"></script>
 	<script>
-		document.cookie = 'data1=124';
+		test1();
+	</script>
+	<!-- <p class="hoge">JavaScript</p>
+	<p class="hogehoge">PHP</p>
+	<p class="hoge">Java</p>
+	<script>
+		var e = document.getElementsByClassName('hoge');
+		e[0].style.color="red";//styleを指定
+		e[1].style.color="blue";//2つめのp要素に指定
+
+		e[0].style = "color:lime; font-size:20px; font-weight:bold;";//styleをまとめて指定
+
+		e[0].setAttribute("foo","100");//属性を指定
+		e[0].innerHTML = "Python";//中身を変更
+	</script> -->
+	<!-- <p class="hoge">JavaScript</p>
+	<p class="hogehoge">PHP</p>
+	<p class="hoge">Java</p>
+	<script>
+		var e = document.getElementsByClassName('hoge');
+		e[0].style.color="red";
+		e[1].style.color="blue";
+
+		for(i in e)
+		{
+			e[i].style.fontWeight = "900";
+		}
+	</script> -->
+	<!-- <form>
+		<input type="text" name="username"/>
+		<input type="text" name="email"/>
+	</form> -->
+
+	<!-- <script>
+		var e = document.getElementsByName('username');
+		e[0].value = "田中太郎";
+		e[0].style = "background-color:#a2a2ec; color:#fff; padding:10px; border:solid 1px #000;";
+		var w = document.getElementsByName('email');
+		w[0].value = "鈴木一郎";
+	</script> -->
+<!-- 	<p id="myid"></p>
+	<script>
+		var elem =document.getElementById("myid");
+
+		elem.innerHTML = "<strong>Hello There!</strong>";
+		elem.style = "color:red;font-size:22px;";
+	</script> -->
+<!-- 	<script>
+		for(p in window.history)
+		{
+			var key = p;
+			var value =window.history[p];
+			document.write(key + ":" + value + "<br>");
+		}
+	</script>
+	<script>
+		document.cookie = 'name=tanaka;';
+		document.cookie = 'email=tanaka@hoge.hoge.com';
+		document.cookie = 'age=30;';
+		document.cookie = 'home=東京都新宿区・・・';
+
+		var a = document.cookie;
+
+		var b = a.split(';');
+
+		for(p in b)
+		{
+			var c =b[p].split('=');
+			document.write("key:" + c[0] + "　値：" + c[1] + "<br>");
+		}
+		// document.cookie = 'name=; max-age=0';
+		// document.cookie = 'email=; max-age=0';
+		// document.cookie = 'age=; max-age=0';
+		// document.cookie = 'home=; max-age=0';
+	
+		// document.cookie = "email=; max-age=0";
+		// document.cookie = "name=; max-age=0";
+
+		// var a = document.cookie;
+		// var b = a.split(';');
+		// for(p in b)
+		// {
+		// 	var c = b[p].split('=');
+		// 	document.write(c[0] + "=" + c[1] + "<br>");
+		// }
+		// document.write(b[2]);
+		//path
+		//domain
+		//max-age
+		//expires
+		//secure
+		//クッキーの削除する方法　window.cookie = "email=;max-age=0";
 	</script>
 	<script>
 		function newlocation()
@@ -15,7 +111,7 @@
 		window.location = "http://masami.main.jp";
 		}
 	</script>
-	<input type="button" value="Click me" onclick="newlocation()"/>
+	<input type="button" value="Click me" onclick="newlocation()"/> -->
 	<!-- <script>
 		// var a = new Date(2018,3,31);
 		var d = new Date();
@@ -117,7 +213,7 @@
 
 		}
 	</script> -->
-	<div id="target"></div>
+	<!-- <div id="target"></div>
 	<input type="button" value="izumirikaを見たい！" id="bt">
 	<br>
 	<script>
@@ -181,6 +277,6 @@
 		for(var p in document){
 			document.write(p + "<br>");
 		}
-	</script>
+	</script> -->
 </body>
 </html>

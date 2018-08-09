@@ -1,0 +1,24 @@
+body{
+	width:1080px;
+	margin:0 auto;
+	color:#19ACB5;
+	font-size: 30px;
+	font-weight: bold;
+}
+p.hoge1 {
+	color:red;
+	font-weight: bold;
+}
+p.hogehoge {
+	color:blue;
+	font-size: 20px;
+	background:#F1F7B3;
+	padding:10px;
+	border: solid 2px #eee;
+}
+p.hoge2 {
+	color:pink;
+	border:solid 1px ;
+	background:#FFF3F3;
+	padding:20px;
+}

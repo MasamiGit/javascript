@@ -5,6 +5,23 @@
 	<title>GetElementById</title>
 </head>
 <body>
-	
+	<p id="myid"></p>
+	<h1 id="h1id"></h1>
+	<section id="secid"></section>
+	<script>
+		var elem = document.getElementById("myid");
+		elem.innerHTML = "<strong>Hello There!</strong>";
+		elem.style = "color:red; font-size:30px;";
+
+		var elem2 = document.getElementById("h1id");
+		elem2.innerHTML = "<strong>Hello JavaScrput!</strong>";
+		elem2.style = "color:green";
+
+		var elem3 = document.getElementById("secid");
+		elem3.innerHTML = "<strong>Dcument Object Model!</strong>";
+		elem3.style = "color:pink; font-size:30px";
+
+
+	</script>
 </body>
 </html>

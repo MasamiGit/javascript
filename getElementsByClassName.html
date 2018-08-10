@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>getElementsByClassName</title>
+</head>
+<body>
+	<p class="num01">JavaScript</p>
+	<p class="num02">PHP</p>
+	<p class="num01">Java</p>
+
+	<script>
+		var e = document.getElementsByClassName("num01");
+		e[0].style.color = "red";
+		e[1].style.color = "blue";
+
+		for(i in e)
+		{
+			e[i].style.fontWeight = "bold";
+			e[i].style.fontSize = "22px";
+		}
+	</script>
+</body>
+</html>

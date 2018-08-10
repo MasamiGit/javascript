@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>getElementsByName</title>
+</head>
+<body>
+	<form action="">
+		<input type="text" name="usermame">
+		<input type="text" name="email">
+	</form>
+
+	<script>
+		var e = document.getElementsByName('usermame');
+		e[0].value = "田中太郎";
+		e[0].style = "background-color:#f5f5dc; border:none; border:solid 1px red;padding:10px;";
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>getAttribute</title>
+</head>
+<body>
+	<p class="num01">JavaScript</p>
+	<p class="num02">PHP</p>
+	<p class="num01">Java</p>
+
+	<script>
+		var e = document.getElementsByClassName("num01");
+		e[0].style.color = "red";
+		e[1].style.color = "blue";
+
+		e[0].style = "color:green; font-size:22px; font-weight:bold;";
+
+		e[0].setAttribute("class","num00");
+		e[0].innerHTML = "python";
+		e[0].style = "color:pink; font-size:22px; font-weight:bold;";
+	</script>
+</body>
+</html>

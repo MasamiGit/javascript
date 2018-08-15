@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>21_ダイアログボックス
+		   【警告メッセージ。alert("表示文");】
+
+		   【確認メッセージ。confirm("表示文");】
+		   var result = confirm("削除しますか？");
+		   ※ユーザーがokなのかonなのか、そのデータが返ってきます。
+		   処理を振り分けることが出来る。
+		   その、データを変数で受け止める。
+
+		   【入力ダイアログボック。prompt("表示文");】
+		   var name = prompt("名前を入力してください");
+		   文字を入力してもらい、そのデータが返ってきます。
+		   その、データを変数で受け止める。
+	</title>
+</head>
+<body>
+	<script>
+		var result = confirm("名前を入力してしてください。");
+		console.log(result);
+		if(result){
+			var name = prompt("名前を入力してください");
+			if(true){
+		　　alert(name + "と申します。");
+
+		　　document.write("お名前は" + name + "さんでした。");	
+			}else{
+				document.write("終了");
+			}
+		}else{
+			document.write("終了");
+		}
+	</script>
+</body>
+</html>

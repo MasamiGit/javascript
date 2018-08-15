@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>17_loop_control
+		   【 break と continue を理解することで　loop　のコントロールをできるようになる。】
+	</title>
+</head>
+<body>
+	<script>
+		for(var b = 0; b < 15; b++){
+			document.write(" " + b);
+		}
+		document.write("<br>");
+		for(var b = 0; b < 15; b++){
+			console.log(b);
+			if(b === 10)break;//　bの値が10になればぬける。
+			document.write(" " + b);
+		}
+		document.write("<br>");
+		for(var b = 0; b < 15; b++){
+			if(b === 10)continue;//　bが10の時に飛ばしているのがわかる。
+			document.write(" " + b);
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>18_function
+		   【 処理をまとめて一つの関数にまとめる。】
+	</title>
+</head>
+<body>
+	<script>
+		function display(a){
+			document.write(a);//aの値が必要です。document.write();では表示されない。
+			console.log(a);
+		}
+		display("Hello!" + "<br>");//Hello!が表示される。
+	</script>
+	<script>
+		function display(a){
+			document.write(a);
+			console.log(a + "<br>");
+		}
+		display();//【a】undefined（値がない！）が返されます。
+		//【a + "<br>"】でNaN・・・つまり非数がかえされます。
+	</script>
+	<script>
+		function display(b){
+			document.write("Hello!");
+			console.log("b");
+		}
+		display();//Hello!が表示される。
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>20_連想配列
+		   【変数任意の数が連なったもの。】
+		   【一つの名前で管理できる。】
+		   【それぞれの箱を名前に、
+		   key「見出し」を付けて管理する。】
+		   【配列を管理する沢山のfunctionが用意されている。】
+	</title>
+</head>
+<body>
+	<script>
+		var a = //[
+		{"東京都の":"鈴木一郎さんの箱です。","名古屋市の":"大木金太郎さんの箱です。","大阪府":"福田正美さんの箱です。"}//]連想配列は、波かっこに変える。
+		;
+		document.write(a["東京都の"]);
+		document.write("<br>");
+		 for(i in a){
+		 	document.write(i + ":" + a[i]);
+		 	document.write("<br>");
+		}
+	</script>
+</body>
+</html>

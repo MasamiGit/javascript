@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>24_イベント
+		   【古いやり方】
+		   【マウスクリック OnClick=""】
+		   【ダブルクリック OnDblClick=""】
+		   【マウスオーバーOnMouseOver=""】
+	</title>
+</head>
+<body>
+	<script>
+		function push(){
+			alert("ダブルクリックで実行されました");
+		}
+	</script>
+		<!-- <input type="button" value="Push me" onclick="alert('You pushed me')"> -->
+		<input type="button" value="Pushed me" ondblclick="push()">
+		<input type="button" value="Puch me" onclick="var name = prompt('ボタンを押してください');document.write('promptで値「' +name + '」を返しています');">
+</body>
+</html>

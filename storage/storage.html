@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>storage</title>
+</head>
+<body>
+	<script>
+		
+
+		localStorage.setItem('name','yamada');
+		localStorage.setItem('name1','tatibana');
+		localStorage.setItem('name2','yamasaki');
+		var name = localStorage.removeItem('name');//削除
+		localStorage.setItem('age','22');
+		sessionStorage.setItem('name','Szuki');
+		sessionStorage.setItem('age','26');
+		var a = localStorage.getItem('name');//取得
+		console.log(a);
+		var cont = localStorage.length;//個数を取得
+		console.log(cont);
+		var key = localStorage.key(0);//最初のkeyを取得する
+		console.log(key);
+		//localStorage.clear();//全て削除
+	</script>
+</body>
+</html>
